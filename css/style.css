@@ -56,7 +56,8 @@ html {
 }
 
 .header__container {
-  max-width: 850px;
+  width: 850px;
+  margin-bottom: 24px;
 }
 
 .header__title {
@@ -131,6 +132,33 @@ html {
   -webkit-transform: scaleX(1);
       -ms-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+.main {
+  max-width: 1470px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+
+.main__container {
+  width: 850px;
+}
+
+.main__choice-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+.main__right-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
 }
 
 body {

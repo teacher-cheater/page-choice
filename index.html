@@ -34,7 +34,49 @@
         </div>
       </header>
       <!-- main -->
-      <main class="main"></main>
+      <main class="main">
+        <div class="main__container">
+          <div class="main__choice-block section">
+            <!-- block checkbox -->
+            <div class="main__left-block section">
+              <label class="section__block-data">
+                <input
+                  type="checkbox"
+                  id="checkbox"
+                  class="section__real-checkbox"
+                />
+                <span class="section__custom-checkbox"></span>
+                <span class="section__text-checkbox"> Снять с публикации </span>
+              </label>
+            </div>
+            <!-- block choice opinion -->
+            <div class="main__right-block select">
+              <label class="select__choice">
+                <select name="select" class="select__items">
+                  <option value="" disabled selected>Все объявления</option>
+                  <option value="select-advt">Все объявления 1</option>
+                  <option value="select-advt">Все объявления 2</option>
+                  <option value="select-advt">Все объявления 3</option>
+                  <option value="select-advt">Все объявления 4</option>
+                </select>
+              </label>
+              <label class="select__sort">
+                <select name="sort" class="select__items">
+                  <!--<option value="" disabled selected>По дате публикации</option>-->
+                  <option value="select-sort-date-up">
+                    По дате публикации
+                  </option>
+                  <option value="select-sort-date-down">
+                    По дате публикации
+                  </option>
+                  <option value="select-sort-price-up">По цене</option>
+                  <option value="select-sort-price-up">По цене</option>
+                </select>
+              </label>
+            </div>
+          </div>
+        </div>
+      </main>
       <footer class="footer"></footer>
     </div>
   </body>

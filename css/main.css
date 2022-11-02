@@ -1,0 +1,26 @@
+.main {
+  max-width: 1470px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+
+.main__container {
+  width: 850px;
+}
+
+.main__choice-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+.main__right-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}

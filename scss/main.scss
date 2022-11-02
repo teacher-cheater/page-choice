@@ -1,0 +1,67 @@
+.main {
+  max-width: 1470px;
+  margin: 0px auto;
+  padding: 0px 15px;
+  // .main__container
+
+  &__container {
+    width: 850px;
+  }
+
+  // .main__choice-block
+
+  &__choice-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  // .main__left-block
+
+  &__left-block {
+  }
+
+  // .main__right-block
+
+  &__right-block {
+    display: flex;
+    gap: 10px;
+  }
+}
+.section {
+  // .section__block-data
+
+  &__block-data {
+  }
+
+  // .section__real-checkbox
+
+  &__real-checkbox {
+  }
+
+  // .section__custom-checkbox
+
+  &__custom-checkbox {
+  }
+
+  // .section__text-checkbox
+
+  &__text-checkbox {
+  }
+}
+.select {
+  // .select__choice
+
+  &__choice {
+  }
+
+  // .select__items
+
+  &__items {
+  }
+
+  // .select__sort
+
+  &__sort {
+  }
+}
