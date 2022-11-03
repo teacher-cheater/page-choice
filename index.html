@@ -46,7 +46,7 @@
                   class="section__real-checkbox"
                 />
                 <span class="section__custom-checkbox"></span>
-                <span class="section__text-checkbox"> Снять с публикации </span>
+                <span class="section__text-checkbox"> Снять спубликации </span>
               </label>
             </div>
             <!-- block choice opinion -->
@@ -60,19 +60,56 @@
                   <option value="select-advt">Все объявления 4</option>
                 </select>
               </label>
-              <label class="select__sort">
-                <select name="sort" class="select__items">
-                  <!--<option value="" disabled selected>По дате публикации</option>-->
-                  <option value="select-sort-date-up">
-                    По дате публикации
-                  </option>
-                  <option value="select-sort-date-down">
-                    По дате публикации
-                  </option>
-                  <option value="select-sort-price-up">По цене</option>
-                  <option value="select-sort-price-up">По цене</option>
-                </select>
-              </label>
+              <!-- сортировка элементов -->
+              <div class="select__form-group">
+                <label class="select__sort">
+                  <select name="sort" class="select__items">
+                    <!--<option value="" disabled selected>По дате публикации</option>-->
+                    <option value="select-sort-date-up">
+                      По дате публикации
+                    </option>
+                    <option value="select-sort-date-down">
+                      По дате публикации
+                    </option>
+                    <option value="select-sort-price-up">По цене</option>
+                    <option value="select-sort-price-up">По цене</option>
+                  </select>
+                </label>
+              </div>
+              <!-- кастомная сортировка элементов -->
+              <div class="select__form-group dropdown">
+                <div class="dropdown__content">
+                  <button class="dropdown__btn">По дате публикации</button>
+                  <!--  -->
+                  <ul class="dropdown__list">
+                    <li
+                      class="dropdown__item arr-top"
+                      data-value="arr-top-public"
+                    >
+                      По дате публикации
+                    </li>
+                    <li
+                      class="dropdown__item arr-down"
+                      data-value="arr-down-public"
+                    >
+                      По дате публикации
+                    </li>
+                    <li
+                      class="dropdown__item arr-top"
+                      data-value="arr-top-price"
+                    >
+                      По цене
+                    </li>
+                    <li
+                      class="dropdown__item arr-down"
+                      data-value="arr-down-price"
+                    >
+                      По цене
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--  -->
             </div>
           </div>
         </div>

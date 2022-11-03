@@ -44,13 +44,8 @@
     opacity: 0;
     position: absolute;
     z-index: -1;
-
     display: flex;
     align-self: start;
-
-    //&:focus + &__custom-checkbox {
-    //  box-shadow: 0px 0px 0px 1px #961914, 0px 0px 10px #961914;
-    //}
   }
 
   // .section__custom-checkbox
@@ -72,13 +67,7 @@
       display: inline-block;
       width: 16px;
       height: 16px;
-
-      //background: #fafcfd;
-      //border: 1px solid #d8deeb;
-      //border-radius: 2px;
-
       background: url("../img/other-icon/check.svg") 0 0 / contain no-repeat;
-
       position: absolute;
       top: 50%;
       left: 50%;
@@ -114,10 +103,98 @@
   // .select__items
 
   &__items {
+    //width: 0;
+    //height: 0;
+    //opacity: 0;
+    //position: absolute;
+    //z-index: -1;
+    //display: flex;
+    //align-self: start;
+    display: flex;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    align-items: center;
+    color: #606483;
+    padding: 6px 10px;
+    background: #f3f6f8;
+    border-radius: 6px;
   }
 
   // .select__sort
 
   &__sort {
+  }
+}
+
+//кастомная сортировка элементов
+.select {
+  // .select__form-group
+
+  &__form-group {
+  }
+}
+.dropdown {
+  //dropdown__content
+  &__content {
+    position: relative;
+  }
+  // .dropdown__btn
+  &__btn {
+    position: relative;
+    display: block;
+    text-align: left;
+    min-width: 180px;
+    width: 100%;
+    background: #f3f6f8;
+    padding: 6px 18px 6px 10px;
+    border-radius: 6px;
+
+    font-size: 12px;
+    line-height: 1.17;
+    color: #606483;
+    cursor: pointer;
+    &::before {
+      content: "";
+      position: absolute;
+
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+
+      width: 10px;
+      height: 10px;
+      background: url("../img/other-icon/arr.svg") 0 0 / contain no-repeat;
+
+      pointer-events: none;
+      z-index: 1;
+    }
+    &:focus {
+      outline: none;
+      box-shadow: 0px 0px 0px 3px rgba(54, 94, 125, 0.1);
+    }
+  }
+  &__list {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    padding: 8px;
+    background: #ffffff;
+    box-shadow: 1px 4px 40px rgba(54, 94, 125, 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+  }
+  &__item {
+    padding: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    color: #080534;
+    cursor: pointer;
+    &:hover {
+      background: #f3f6f8;
+      border-radius: 6px;
+    }
   }
 }
