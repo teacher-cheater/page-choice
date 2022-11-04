@@ -142,6 +142,8 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -255,7 +257,7 @@ html {
 .dropdown-items__content {
   position: relative;
 }
-.dropdown-items .dropdown-items__btn {
+.dropdown-items__btn {
   position: relative;
   display: block;
   text-align: left;
@@ -269,7 +271,7 @@ html {
   color: #606483;
   cursor: pointer;
 }
-.dropdown-items .dropdown-items__btn::before {
+.dropdown-items__btn::before {
   content: "";
   position: absolute;
   top: 65%;
@@ -283,7 +285,7 @@ html {
   pointer-events: none;
   z-index: 1;
 }
-.dropdown-items .dropdown-items__btn:focus {
+.dropdown-items__btn:focus {
   outline: none;
   -webkit-box-shadow: 0px 0px 0px 3px rgba(54, 94, 125, 0.1);
           box-shadow: 0px 0px 0px 3px rgba(54, 94, 125, 0.1);
@@ -359,6 +361,112 @@ html {
   right: 2px;
   width: 14px;
   height: 14px;
+}
+
+.card {
+  padding: 15px 0 20px;
+}
+.card__container {
+  max-width: 1470px;
+  margin: 0px auto;
+  padding: 0px 15px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #333153;
+}
+.block-right {
+  margin-bottom: 20px;
+}
+.block-right__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.block-right__decription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  min-width: 360px;
+}
+.block-right__titles {
+  margin-bottom: 20px;
+}
+.block-right__title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #2f93e1;
+  margin-bottom: 3px;
+}
+.block-right__subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #333153;
+}
+.block-right__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  color: #606483;
+}
+.block-right__data {
+  min-width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+}
+.block-right__descr {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  color: #080534;
+}
+.response {
+  background: url("../img/data-icons/message.svg") -1px 1px/15px no-repeat;
+}
+.response__text {
+  padding: 0 0 0 20px;
+}
+.response__text span {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  color: #606483;
+}
+
+#response__count {
+  color: #5fb6e7;
+}
+
+.view {
+  background: url("../img/data-icons/eye.svg") -2px -2px/17px no-repeat;
+}
+.view__text {
+  padding: 0 0 0 20px;
+}
+
+.liked {
+  background: url("../img/data-icons/heart.svg") 0 1px/14px no-repeat;
+}
+.liked__text {
+  padding: 0 0 0 20px;
+}
+
+.match {
+  background: url("../img/data-icons/like.svg") 0 -1px/15px no-repeat;
+}
+.match__text {
+  padding: 0 0 0 20px;
 }
 
 body {

@@ -9,6 +9,7 @@
   // .main__choice-block
   &__choice-block {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
   }
@@ -114,7 +115,7 @@
   &__content {
     position: relative;
   }
-  .dropdown-items__btn {
+  &__btn {
     position: relative;
     display: block;
     text-align: left;
@@ -150,7 +151,6 @@
   }
   &__list {
     display: none;
-
     position: absolute;
     left: 0;
     top: 30px;

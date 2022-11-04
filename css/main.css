@@ -7,6 +7,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -120,7 +122,7 @@
 .dropdown-items__content {
   position: relative;
 }
-.dropdown-items .dropdown-items__btn {
+.dropdown-items__btn {
   position: relative;
   display: block;
   text-align: left;
@@ -134,7 +136,7 @@
   color: #606483;
   cursor: pointer;
 }
-.dropdown-items .dropdown-items__btn::before {
+.dropdown-items__btn::before {
   content: "";
   position: absolute;
   top: 65%;
@@ -148,7 +150,7 @@
   pointer-events: none;
   z-index: 1;
 }
-.dropdown-items .dropdown-items__btn:focus {
+.dropdown-items__btn:focus {
   outline: none;
   -webkit-box-shadow: 0px 0px 0px 3px rgba(54, 94, 125, 0.1);
           box-shadow: 0px 0px 0px 3px rgba(54, 94, 125, 0.1);
