@@ -12,9 +12,6 @@
   display: flex;
   gap: 15px;
 }
-.block-left__pictures {
-  position: relative;
-}
 .block-left__check {
   position: absolute;
   top: 11px;
@@ -155,4 +152,8 @@
 }
 .match__text {
   padding: 0 0 0 20px;
+}
+
+.slider__line {
+  width: 460px;
 }

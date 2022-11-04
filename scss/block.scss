@@ -25,7 +25,10 @@
 .block-left {
   // .block-left__pictures
   &__pictures {
-    position: relative;
+    //position: relative;
+    //display: flex;
+    //justify-content: center;
+    //align-items: center;
   }
 
   &__check {
@@ -186,5 +189,11 @@
   // .match__text
   &__text {
     padding: 0 0 0 20px;
+  }
+}
+//slider--------------
+.slider {
+  &__line {
+    width: 460px;
   }
 }

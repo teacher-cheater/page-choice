@@ -4,16 +4,18 @@
 @import "header.scss";
 @import "main.scss";
 @import "block.scss";
+@import "slider.scss";
 
 body {
   line-height: 1;
   font-family: "Inter", sans-serif;
+  background: #777;
 }
 .wrapper {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  //overflow: hidden;
 }
 /* ------------------------------ */
 .main {
