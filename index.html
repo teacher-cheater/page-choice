@@ -51,62 +51,76 @@
             </div>
             <!-- block choice opinion -->
             <div class="main__right-block select">
-              <label class="select__choice">
-                <select name="select" class="select__items">
-                  <option value="" disabled selected>Все объявления</option>
-                  <option value="select-advt">Все объявления 1</option>
-                  <option value="select-advt">Все объявления 2</option>
-                  <option value="select-advt">Все объявления 3</option>
-                  <option value="select-advt">Все объявления 4</option>
-                </select>
-              </label>
-              <!-- сортировка элементов -->
-              <div class="select__form-group">
-                <label class="select__sort">
-                  <select name="sort" class="select__items">
-                    <!--<option value="" disabled selected>По дате публикации</option>-->
-                    <option value="select-sort-date-up">
-                      По дате публикации
-                    </option>
-                    <option value="select-sort-date-down">
-                      По дате публикации
-                    </option>
-                    <option value="select-sort-price-up">По цене</option>
-                    <option value="select-sort-price-up">По цене</option>
-                  </select>
-                </label>
+              <!-- кастомная сортировка элементов -->
+              <div class="select__form-group dropdown-items">
+                <div class="dropdown-items__content dropdown">
+                  <button class="dropdown-items__btn">Все объявления</button>
+                  <ul class="dropdown-items__list">
+                    <li
+                      class="dropdown-items__item arr-top"
+                      data-value="travel"
+                    >
+                      Все объявления 1
+                    </li>
+                    <li
+                      class="dropdown-items__item arr-down"
+                      data-value="travel"
+                    >
+                      Все объявления 2
+                    </li>
+                    <li class="dropdown-items__item arr-top" data-value="photo">
+                      Все объявления 3
+                    </li>
+                    <li
+                      class="dropdown-items__item arr-down"
+                      data-value="lessons"
+                    >
+                      Все объявления 4
+                    </li>
+                  </ul>
+                  <input
+                    type="text"
+                    name="select-category"
+                    value=""
+                    class="dropdown__input"
+                  />
+                </div>
               </div>
               <!-- кастомная сортировка элементов -->
-              <div class="select__form-group dropdown">
-                <div class="dropdown__content">
-                  <button class="dropdown__btn">По дате публикации</button>
-                  <!--  -->
-                  <ul class="dropdown__list">
+              <div class="select__form-group dropdown-items">
+                <div class="dropdown-items__content dropdown">
+                  <button class="dropdown-items__btn">
+                    По дате публикации
+                  </button>
+                  <ul class="dropdown-items__list">
                     <li
-                      class="dropdown__item arr-top"
-                      data-value="arr-top-public"
+                      class="dropdown-items__item arr-top"
+                      data-value="travel"
                     >
                       По дате публикации
                     </li>
                     <li
-                      class="dropdown__item arr-down"
-                      data-value="arr-down-public"
+                      class="dropdown-items__item arr-down"
+                      data-value="travel"
                     >
                       По дате публикации
                     </li>
-                    <li
-                      class="dropdown__item arr-top"
-                      data-value="arr-top-price"
-                    >
+                    <li class="dropdown-items__item arr-top" data-value="photo">
                       По цене
                     </li>
                     <li
-                      class="dropdown__item arr-down"
-                      data-value="arr-down-price"
+                      class="dropdown-items__item arr-down"
+                      data-value="lessons"
                     >
                       По цене
                     </li>
                   </ul>
+                  <input
+                    type="text"
+                    name="select-category"
+                    value=""
+                    class="dropdown__input"
+                  />
                 </div>
               </div>
               <!--  -->
@@ -116,5 +130,6 @@
       </main>
       <footer class="footer"></footer>
     </div>
+    <script src="./js/app.js"></script>
   </body>
 </html>
