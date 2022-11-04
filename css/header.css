@@ -1,11 +1,20 @@
 .header {
   padding: 82px 0;
+}
+@media (max-width: 991.98px) {
+  .header {
+    padding: 52px 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .header {
+    padding: 30px 0 10px;
+  }
+}
+.header__container {
   max-width: 1470px;
   margin: 0px auto;
   padding: 0px 15px;
-}
-.header__container {
-  width: 850px;
   margin-bottom: 24px;
 }
 .header__title {

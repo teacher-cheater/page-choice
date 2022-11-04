@@ -1,11 +1,9 @@
 .main {
-  max-width: 1470px;
-  margin: 0px auto;
-  padding: 0px 15px;
-
   // .main__container
   &__container {
-    width: 850px;
+    max-width: 1470px;
+    margin: 0px auto;
+    padding: 0px 15px;
   }
 
   // .main__choice-block
@@ -19,6 +17,9 @@
   &__right-block {
     display: flex;
     gap: 10px;
+    @media (max-width: 580.98px) {
+      flex-wrap: wrap;
+    }
   }
 }
 .section {
@@ -159,6 +160,7 @@
     border-radius: 6px;
     overflow: hidden;
     width: 100%;
+    z-index: 2;
   }
   &__item {
     padding: 8px;

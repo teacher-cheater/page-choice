@@ -1,12 +1,17 @@
 .header {
   padding: 82px 0;
-  max-width: 1470px;
-  margin: 0px auto;
-  padding: 0px 15px;
+  @media (max-width: 991.98px) {
+    padding: 52px 0;
+  }
+  @media (max-width: 767.98px) {
+    padding: 30px 0 10px;
+  }
 
   //header__container
   &__container {
-    width: 850px;
+    max-width: 1470px;
+    margin: 0px auto;
+    padding: 0px 15px;
     margin-bottom: 24px;
   }
   // .header__title
