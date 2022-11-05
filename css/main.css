@@ -1,5 +1,5 @@
 .main__container {
-  max-width: 1470px;
+  max-width: 880px;
   margin: 0px auto;
   padding: 0px 15px;
 }
@@ -33,6 +33,7 @@
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 .section__real-checkbox {
   width: 0;

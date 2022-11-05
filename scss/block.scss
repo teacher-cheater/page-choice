@@ -3,25 +3,25 @@
 
   // .card__container
   &__container {
-    max-width: 1470px;
+    max-width: 880px;
     margin: 0px auto;
     padding: 0px 15px;
     margin-bottom: 24px;
     border-bottom: 1px solid #333153;
     display: flex;
+    //justify-content: flex-end;
     gap: 15px;
   }
 
   // .card__left-block
-
   &__left-block {
   }
 
   // .card__right-block
-
   &__right-block {
   }
 }
+
 .block-left {
   // .block-left__pictures
   &__pictures {
@@ -57,12 +57,14 @@
     right: 14px;
     width: 20px;
     height: 20px;
-    background: #2f93e1;
     border-radius: 3px;
     text-align: center;
   }
+
   &__icon {
+    vertical-align: middle;
   }
+
   &__element {
     position: absolute;
     bottom: 0;
@@ -71,6 +73,7 @@
     height: 25px;
     background: url("../img/icons/vector.svg") 0 0 no-repeat;
   }
+
   &__element img {
     position: absolute;
     bottom: 0;
@@ -80,6 +83,8 @@
     height: 15px;
   }
 }
+
+//----------block right-------------
 .block-right {
   margin-bottom: 20px;
 
@@ -106,7 +111,6 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.22;
-    color: #2f93e1;
     margin-bottom: 3px;
   }
 
@@ -135,7 +139,6 @@
   }
 
   // .block-right__descr
-
   &__descr {
     font-weight: 400;
     font-size: 12px;
@@ -144,10 +147,10 @@
   }
 
   // .block-right__progreebar
-
   &__progreebar {
   }
 }
+
 .response {
   background: url("../img/data-icons/message.svg") -1px 1px/15px no-repeat;
 
@@ -155,6 +158,7 @@
   &__text {
     padding: 0 0 0 20px;
   }
+
   &__text span {
     font-weight: 500;
     font-size: 12px;
@@ -162,28 +166,31 @@
     color: #606483;
   }
 }
+
 //response +1
 #response__count {
   color: #5fb6e7;
 }
-//---------
+
+//------------------------
 .view {
   background: url("../img/data-icons/eye.svg") -2px -2px/17px no-repeat;
 
   // .view__text
-
   &__text {
     padding: 0 0 0 20px;
   }
 }
+
 .liked {
   background: url("../img/data-icons/heart.svg") 0 1px / 14px no-repeat;
-  // .liked__text
 
+  // .liked__text
   &__text {
     padding: 0 0 0 20px;
   }
 }
+
 .match {
   background: url("../img/data-icons/like.svg") 0 -1px/ 15px no-repeat;
 
@@ -192,9 +199,38 @@
     padding: 0 0 0 20px;
   }
 }
-//slider--------------
-.slider {
-  &__line {
-    width: 460px;
+
+//------- card column items---------
+.card {
+  // .card__block-column
+
+  &__block-column {
+  }
+}
+
+.column {
+  // .column__content
+
+  &__content {
+  }
+
+  // .column__items
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  // .column__item
+
+  &__item {
+    border: 1px solid #d8deeb;
+    padding: 9px;
+    border-radius: 6px;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 1px 4px 4px rgb(54 94 125 / 10%);
+      transition: all 0.4s ease-in 0s;
+    }
   }
 }

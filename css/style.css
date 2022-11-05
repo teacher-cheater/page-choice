@@ -33,10 +33,6 @@ h6 {
   font-size: inherit;
 }
 
-img {
-  vertical-align: top;
-}
-
 html,
 body {
   height: 100%;
@@ -61,7 +57,7 @@ html {
   }
 }
 .header__container {
-  max-width: 1470px;
+  max-width: 880px;
   margin: 0px auto;
   padding: 0px 15px;
   margin-bottom: 24px;
@@ -134,7 +130,7 @@ html {
 }
 
 .main__container {
-  max-width: 1470px;
+  max-width: 880px;
   margin: 0px auto;
   padding: 0px 15px;
 }
@@ -168,6 +164,7 @@ html {
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 .section__real-checkbox {
   width: 0;
@@ -367,7 +364,7 @@ html {
   padding: 15px 0 20px;
 }
 .card__container {
-  max-width: 1470px;
+  max-width: 880px;
   margin: 0px auto;
   padding: 0px 15px;
   margin-bottom: 24px;
@@ -413,9 +410,11 @@ html {
   right: 14px;
   width: 20px;
   height: 20px;
-  background: #2f93e1;
   border-radius: 3px;
   text-align: center;
+}
+.block-left__icon {
+  vertical-align: middle;
 }
 .block-left__element {
   position: absolute;
@@ -462,7 +461,6 @@ html {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.22;
-  color: #2f93e1;
   margin-bottom: 3px;
 }
 .block-right__subtitle {
@@ -532,8 +530,28 @@ html {
   padding: 0 0 0 20px;
 }
 
-.slider__line {
-  width: 460px;
+.column__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.column__item {
+  border: 1px solid #d8deeb;
+  padding: 9px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.column__item:hover {
+  -webkit-box-shadow: 1px 4px 4px rgba(54, 94, 125, 0.1);
+          box-shadow: 1px 4px 4px rgba(54, 94, 125, 0.1);
+  -webkit-transition: all 0.4s ease-in 0s;
+  -o-transition: all 0.4s ease-in 0s;
+  transition: all 0.4s ease-in 0s;
 }
 
 .slider {
@@ -654,6 +672,30 @@ html {
   background: #fff;
 }
 
+.title-color-1 {
+  color: #ff5a50;
+}
+
+.title-color-2 {
+  color: #2f93e1;
+}
+
+.icon-bg-color-1 {
+  background: #2f93e1;
+}
+
+.icon-bg-color-2 {
+  background: #ff5a50;
+}
+
+.icon-bg-color-3 {
+  background: #ff5a50;
+}
+
+.icon-bg-color-4 {
+  background: #ffa438;
+}
+
 body {
   line-height: 1;
   font-family: "Inter", sans-serif;
@@ -669,6 +711,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
+  max-width: 1470px;
+  margin: 0 auto;
 }
 
 /* ------------------------------ */
