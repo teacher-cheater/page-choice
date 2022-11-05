@@ -25,10 +25,10 @@
 .block-left {
   // .block-left__pictures
   &__pictures {
-    //position: relative;
-    //display: flex;
-    //justify-content: center;
-    //align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__check {
@@ -44,6 +44,7 @@
     background: #fafcfd;
     border: 1px solid #d8deeb;
     border-radius: 2px;
+    z-index: 2;
   }
 
   &__check img {
