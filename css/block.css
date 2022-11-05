@@ -4,14 +4,27 @@
 .card__container {
   max-width: 880px;
   margin: 0px auto;
-  padding: 0px 15px;
+  padding: 0px 15px 14px;
   margin-bottom: 24px;
   border-bottom: 1px solid #333153;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 16px;
 }
+.card__left-block {
+  max-width: 230px;
+}
+.card__right-block {
+  max-width: 552px;
+}
+.card__block-column {
+  max-width: 36px;
+}
+
 .block-left__pictures {
   position: relative;
   display: -webkit-box;
@@ -190,4 +203,25 @@
   -webkit-transition: all 0.4s ease-in 0s;
   -o-transition: all 0.4s ease-in 0s;
   transition: all 0.4s ease-in 0s;
+}
+
+.progressbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.progressbar-line {
+  max-width: 50px;
+  max-height: 8px;
+  background: #eef2f4;
+  border-radius: 12px;
+}
+
+.progressbar-count {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  color: #606483;
 }
