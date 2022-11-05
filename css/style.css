@@ -524,17 +524,15 @@ html {
 }
 
 .slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 230px;
   height: 170px;
   border-radius: 10px;
   overflow: hidden;
+  position: relative;
 }
 
 .slides {
-  width: 300%;
+  width: 500%;
   height: 170px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -561,9 +559,7 @@ html {
 .navigation-manual {
   position: absolute;
   bottom: 10px;
-  left: 0;
   width: 230px;
-  margin-top: -4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -573,21 +569,20 @@ html {
 }
 
 .manual-btn {
-  border: 1px solid rgba(153, 153, 153, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   padding: 2px;
   border-radius: 10px;
   cursor: pointer;
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
-  background: rgba(153, 153, 153, 0.5);
+  background: rgba(255, 255, 255, 0.5);
 }
 .manual-btn:not(:last-child) {
   margin-right: 4px;
 }
 .manual-btn:hover {
   background: #fff;
-  border: 1px solid #fff;
 }
 
 #radio1:checked ~ .first {
@@ -609,7 +604,6 @@ html {
 .navigation-auto {
   position: absolute;
   bottom: 10px;
-  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -620,7 +614,7 @@ html {
 }
 
 .navigation-auto div {
-  border: 1px solid #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   padding: 2px;
   border-radius: 10px;
   -webkit-transition: 1s;
@@ -662,11 +656,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
 }
 
 /* ------------------------------ */
-.main {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}

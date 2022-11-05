@@ -39,3 +39,5 @@ document.querySelectorAll('.dropdown').forEach((dropDownWrapper) => {
     }
   });
 });
+
+//------------slider---------
