@@ -299,6 +299,7 @@
 }
 
 .progressbar-line {
+  position: relative;
   background: #eef2f4;
   border-radius: 12px;
   width: 100px;
@@ -306,6 +307,16 @@
   -ms-flex-item-align: center;
       align-self: center;
   vertical-align: sub;
+}
+.progressbar-line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 8px;
+  background: #606483;
+  border-radius: 12px 0 0 12px;
 }
 
 .progressbar-count {
