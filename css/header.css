@@ -30,7 +30,7 @@
   display: -ms-flexbox;
   display: flex;
   gap: 28px;
-  border-bottom: 1px solid #333153;
+  border-bottom: 1px solid #eef2f4;
 }
 .header__list li {
   display: -webkit-box;

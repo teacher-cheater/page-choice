@@ -3,6 +3,7 @@
   @media (max-width: 991.98px) {
     padding: 52px 0;
   }
+
   @media (max-width: 767.98px) {
     padding: 30px 0 10px;
   }
@@ -24,26 +25,21 @@
     margin-bottom: 16px;
   }
 
-  // .header__items
-
-  &__items {
-  }
-
   // .header__list
-
   &__list {
     padding: 11.5px 0;
     display: flex;
     gap: 28px;
-    border-bottom: 1px solid #333153;
+    border-bottom: 1px solid #eef2f4;
   }
+
   &__list li {
     display: flex;
     gap: 12px;
     align-items: center;
   }
-  // .header__link
 
+  // .header__link
   &__link {
     display: inline-block;
     position: relative;
@@ -59,6 +55,7 @@
       border-radius: 5px;
     }
   }
+
   &__link.active a {
     font-weight: 500;
     color: #333153;
@@ -78,10 +75,12 @@
     line-height: 1.57;
     color: #728096;
   }
+
   //&__link.active {
   //  color: #080534;
   //}
 }
+
 .active::after {
   transform: scaleX(1);
 }
