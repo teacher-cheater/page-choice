@@ -33,7 +33,6 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
-  color: #080534;
   cursor: pointer;
 }
 .dropdown-dots__item:hover {
@@ -62,4 +61,20 @@
 
 .dropdown-dots__list--visible {
   display: block;
+}
+
+.btn-arrow {
+  background: url("../img/data-icons/arr-top.svg") center center no-repeat;
+}
+
+.btn-pen {
+  background: url("../img/data-icons/pen.svg") center center no-repeat;
+}
+
+.btn-cloud {
+  background: url("../img/data-icons/cloud.svg") center center no-repeat;
+}
+
+.btn-dots {
+  background: url("../img/data-icons/dots.svg") center center no-repeat;
 }

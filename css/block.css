@@ -268,6 +268,7 @@
 }
 .column__item {
   border: 1px solid #d8deeb;
+  background: #fff;
   border-radius: 6px;
   position: relative;
   width: 36px;
@@ -298,10 +299,13 @@
 }
 
 .progressbar-line {
-  max-width: 50px;
-  max-height: 8px;
   background: #eef2f4;
   border-radius: 12px;
+  width: 100px;
+  height: 8px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  vertical-align: sub;
 }
 
 .progressbar-count {

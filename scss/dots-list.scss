@@ -5,14 +5,11 @@
     position: absolute;
     left: -109px;
     top: 137px;
-    //left: 0;
-    //top: 38px;
     padding: 8px;
     background: #ffffff;
     box-shadow: 1px 4px 40px rgba(54, 94, 125, 0.1);
     border-radius: 6px;
     overflow: hidden;
-    //width: 100%;
     z-index: 5;
     @media (max-width: 767.98px) {
       left: 0px;
@@ -25,12 +22,12 @@
       width: 100%;
     }
   }
+
   &__item {
     padding: 8px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
-    color: #080534;
     cursor: pointer;
     &:hover {
       background: #f3f6f8;
@@ -50,14 +47,6 @@
   box-shadow: 0px 0px 0px 3px rgba(54, 94, 125, 0.1);
 }
 
-//&__link.active {
-//  color: #080534;
-//}
-
-//.active::after {
-//  transform: scaleX(1);
-//}
-
 .dropdown-dots__btn--active {
   outline: none;
   -webkit-box-shadow: 0px 0px 0px 3px rgb(54 94 125 / 10%);
@@ -66,4 +55,17 @@
 
 .dropdown-dots__list--visible {
   display: block;
+}
+//-------bg btn------
+.btn-arrow {
+  background: url("../img/data-icons/arr-top.svg") center center no-repeat;
+}
+.btn-pen {
+  background: url("../img/data-icons/pen.svg") center center no-repeat;
+}
+.btn-cloud {
+  background: url("../img/data-icons/cloud.svg") center center no-repeat;
+}
+.btn-dots {
+  background: url("../img/data-icons/dots.svg") center center no-repeat;
 }

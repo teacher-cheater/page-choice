@@ -5,12 +5,6 @@
     margin: 0px auto;
     padding: 0 15px;
     margin-bottom: 16px;
-    @media (max-width: 991.98px) {
-    }
-    @media (max-width: 767.98px) {
-    }
-    @media (max-width: 540.98px) {
-    }
   }
 
   &__wrapper {
@@ -138,16 +132,11 @@
     margin-right: 16px;
     min-width: 360px;
     margin-bottom: 20px;
-
     @media (max-width: 880.98px) {
       min-width: 280px;
     }
     @media (max-width: 800.98px) {
       min-width: 260px;
-    }
-    @media (max-width: 767.98px) {
-    }
-    @media (max-width: 540.98px) {
     }
   }
 
@@ -268,6 +257,7 @@
   // .column__item
   &__item {
     border: 1px solid #d8deeb;
+    background: #fff;
     border-radius: 6px;
     position: relative;
     width: 36px;
@@ -292,11 +282,16 @@
   display: flex;
   gap: 10px;
 }
+
 .progressbar-line {
-  max-width: 50px;
-  max-height: 8px;
   background: #eef2f4;
   border-radius: 12px;
+  //display: flex;
+  width: 100px;
+  height: 8px;
+  //align-items: center;
+  align-self: center;
+  vertical-align: sub;
 }
 .progressbar-count {
   font-weight: 500;
