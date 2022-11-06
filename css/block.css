@@ -95,7 +95,7 @@
   background: #fafcfd;
   border: 1px solid #d8deeb;
   border-radius: 2px;
-  z-index: 2;
+  z-index: 3;
 }
 .block-left__check img {
   border-radius: 6px;
@@ -108,6 +108,7 @@
   height: 20px;
   border-radius: 3px;
   text-align: center;
+  z-index: 3;
 }
 .block-left__icon {
   vertical-align: middle;
@@ -119,6 +120,7 @@
   width: 58px;
   height: 25px;
   background: url("../img/icons/vector.svg") 0 0 no-repeat;
+  z-index: 3;
 }
 .block-left__element img {
   position: absolute;

@@ -75,7 +75,7 @@
     background: #fafcfd;
     border: 1px solid #d8deeb;
     border-radius: 2px;
-    z-index: 2;
+    z-index: 3;
   }
 
   &__check img {
@@ -90,6 +90,7 @@
     height: 20px;
     border-radius: 3px;
     text-align: center;
+    z-index: 3;
   }
 
   &__icon {
@@ -103,6 +104,7 @@
     width: 58px;
     height: 25px;
     background: url("../img/icons/vector.svg") 0 0 no-repeat;
+    z-index: 3;
   }
 
   &__element img {

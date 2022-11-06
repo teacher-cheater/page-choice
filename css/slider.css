@@ -166,3 +166,20 @@
 .icon-bg-color-4 {
   background: #ffa438;
 }
+
+.swiper-pagination-bullet {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  background: rgba(255, 255, 255, 0.5);
+}
+.swiper-pagination-bullet:not(:last-child) {
+  margin-right: 4px;
+}
+.swiper-pagination-bullet:hover {
+  background: #fff;
+}

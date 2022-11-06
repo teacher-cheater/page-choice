@@ -132,3 +132,18 @@
 .icon-bg-color-4 {
   background: #ffa438;
 }
+//-----style slider swiper
+.swiper-pagination-bullet {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+  background: rgba(255, 255, 255, 0.5);
+  &:not(:last-child) {
+    margin-right: 4px;
+  }
+  &:hover {
+    background: #fff;
+  }
+}

@@ -457,7 +457,7 @@ html {
   background: #fafcfd;
   border: 1px solid #d8deeb;
   border-radius: 2px;
-  z-index: 2;
+  z-index: 3;
 }
 .block-left__check img {
   border-radius: 6px;
@@ -470,6 +470,7 @@ html {
   height: 20px;
   border-radius: 3px;
   text-align: center;
+  z-index: 3;
 }
 .block-left__icon {
   vertical-align: middle;
@@ -481,6 +482,7 @@ html {
   width: 58px;
   height: 25px;
   background: url("../img/icons/vector.svg") 0 0 no-repeat;
+  z-index: 3;
 }
 .block-left__element img {
   position: absolute;
@@ -936,6 +938,23 @@ html {
 
 .icon-bg-color-4 {
   background: #ffa438;
+}
+
+.swiper-pagination-bullet {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  background: rgba(255, 255, 255, 0.5);
+}
+.swiper-pagination-bullet:not(:last-child) {
+  margin-right: 4px;
+}
+.swiper-pagination-bullet:hover {
+  background: #fff;
 }
 
 body {
