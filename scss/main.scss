@@ -25,7 +25,6 @@
 }
 .section {
   // .section__block-data
-
   &__block-data {
     display: flex;
     gap: 10px;
@@ -89,6 +88,7 @@
     border-radius: 6px;
   }
 }
+
 .select {
   // .select__items
   &__items {
@@ -103,6 +103,7 @@
     border-radius: 6px;
   }
 }
+
 .select-invisible {
   width: 0;
   height: 0;
@@ -133,15 +134,12 @@
     &::before {
       content: "";
       position: absolute;
-
       top: 65%;
       right: 10px;
       transform: translateY(-50%);
-
       width: 14px;
       height: 14px;
       background: url("../img/other-icon/arr.svg") 0 0 / contain no-repeat;
-
       pointer-events: none;
       z-index: 1;
     }
@@ -161,7 +159,7 @@
     border-radius: 6px;
     overflow: hidden;
     width: 100%;
-    z-index: 2;
+    z-index: 5;
   }
   &__item {
     padding: 8px;

@@ -53,7 +53,6 @@
   }
   //.card__block-column
   &__block-column {
-    //max-width: 36px;
     @media (max-width: 863.98px) {
       flex-direction: row;
     }
@@ -199,10 +198,6 @@
     line-height: 1.17;
     color: #080534;
   }
-
-  // .block-right__progreebar
-  &__progreebar {
-  }
 }
 
 .response {
@@ -255,19 +250,7 @@
 }
 
 //------- card column items---------
-.card {
-  // .card__block-column
-
-  &__block-column {
-  }
-}
-
 .column {
-  // .column__content
-
-  &__content {
-  }
-
   // .column__items
   &__items {
     display: flex;
@@ -303,6 +286,7 @@
     transform: translate(-50%, -50%);
   }
 }
+
 //-------progressbar-------
 .progressbar {
   display: flex;
