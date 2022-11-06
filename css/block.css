@@ -127,7 +127,7 @@
   color: #606483;
 }
 .block-right__data {
-  min-width: 40px;
+  min-width: 176px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,8 +193,10 @@
 }
 .column__item {
   border: 1px solid #d8deeb;
-  padding: 9px;
   border-radius: 6px;
+  position: relative;
+  width: 36px;
+  height: 36px;
   cursor: pointer;
 }
 .column__item:hover {
@@ -203,6 +205,14 @@
   -webkit-transition: all 0.4s ease-in 0s;
   -o-transition: all 0.4s ease-in 0s;
   transition: all 0.4s ease-in 0s;
+}
+.column__item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .progressbar {

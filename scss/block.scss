@@ -139,7 +139,7 @@
 
   // .block-right__data
   &__data {
-    min-width: 40px;
+    min-width: 176px;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -229,16 +229,24 @@
   }
 
   // .column__item
-
   &__item {
     border: 1px solid #d8deeb;
-    padding: 9px;
     border-radius: 6px;
+    position: relative;
+    width: 36px;
+    height: 36px;
     cursor: pointer;
     &:hover {
       box-shadow: 1px 4px 4px rgb(54 94 125 / 10%);
       transition: all 0.4s ease-in 0s;
     }
+  }
+
+  &__item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 //-------progressbar-------
