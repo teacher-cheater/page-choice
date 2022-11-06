@@ -38,6 +38,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 20px;
+    max-width: 300px;
   }
 }
 .card__right-block {

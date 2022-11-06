@@ -4,12 +4,19 @@
   border-radius: 10px;
   overflow: hidden;
   position: relative;
+  @media (max-width: 540.98px) {
+    width: 300px;
+    height: 240px;
+  }
 }
 
 .slides {
   width: 500%;
   height: 170px;
   display: flex;
+  @media (max-width: 540.98px) {
+    height: 240px;
+  }
 }
 
 .slides input {
@@ -24,6 +31,10 @@
 .slide img {
   width: 230px;
   height: 170px;
+  @media (max-width: 540.98px) {
+    width: 300px;
+    height: 240px;
+  }
 }
 
 /* --- */
@@ -33,6 +44,9 @@
   width: 230px;
   display: flex;
   justify-content: center;
+  @media (max-width: 540.98px) {
+    width: 300px;
+  }
 }
 
 .manual-btn {
@@ -69,6 +83,9 @@
   display: flex;
   width: 230px;
   justify-content: center;
+  @media (max-width: 540.98px) {
+    width: 300px;
+  }
 }
 
 .navigation-auto div {
