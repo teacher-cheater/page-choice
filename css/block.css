@@ -224,11 +224,24 @@
   color: #5fb6e7;
 }
 
+.offer {
+  background: url("../img/data-icons/offer.svg") -2px -2px/17px no-repeat;
+}
+.offer__text {
+  padding: 0 0 0 20px;
+}
+.offer__text span {
+  padding: 0 0 0 10px;
+}
+
 .view {
   background: url("../img/data-icons/eye.svg") -2px -2px/17px no-repeat;
 }
 .view__text {
   padding: 0 0 0 20px;
+}
+.view__text span {
+  padding: 0 10px 0 0;
 }
 
 .liked {
@@ -237,12 +250,18 @@
 .liked__text {
   padding: 0 0 0 20px;
 }
+.liked__text span {
+  padding: 0 0 0 10px;
+}
 
 .match {
   background: url("../img/data-icons/like.svg") 0 -1px/15px no-repeat;
 }
 .match__text {
   padding: 0 0 0 20px;
+}
+.match__text span {
+  padding: 0 0 0 10px;
 }
 
 .column__items {

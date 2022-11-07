@@ -212,12 +212,25 @@
 }
 
 //------------------------
+.offer {
+  background: url("../img/data-icons/offer.svg") -2px -2px/17px no-repeat;
+  &__text {
+    padding: 0 0 0 20px;
+  }
+  &__text span {
+    padding: 0 0 0 10px;
+  }
+}
+
 .view {
   background: url("../img/data-icons/eye.svg") -2px -2px/17px no-repeat;
 
   // .view__text
   &__text {
     padding: 0 0 0 20px;
+  }
+  &__text span {
+    padding: 0 10px 0 0;
   }
 }
 
@@ -228,6 +241,9 @@
   &__text {
     padding: 0 0 0 20px;
   }
+  &__text span {
+    padding: 0 0 0 10px;
+  }
 }
 
 .match {
@@ -236,6 +252,9 @@
   // .match__text
   &__text {
     padding: 0 0 0 20px;
+  }
+  &__text span {
+    padding: 0 0 0 10px;
   }
 }
 
