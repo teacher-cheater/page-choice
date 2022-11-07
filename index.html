@@ -95,22 +95,25 @@
                   <ul class="dropdown-items__list">
                     <li
                       class="dropdown-items__item arr-top"
-                      data-value="travel"
+                      data-value="date-new"
                     >
                       По дате публикации
                     </li>
                     <li
                       class="dropdown-items__item arr-down"
-                      data-value="travel"
+                      data-value="date-old"
                     >
                       По дате публикации
                     </li>
-                    <li class="dropdown-items__item arr-top" data-value="photo">
+                    <li
+                      class="dropdown-items__item arr-price-top"
+                      data-value="price-up"
+                    >
                       По цене
                     </li>
                     <li
-                      class="dropdown-items__item arr-down"
-                      data-value="lessons"
+                      class="dropdown-items__item arr-price-down"
+                      data-value="price-down"
                     >
                       По цене
                     </li>
@@ -128,7 +131,7 @@
           </div>
         </div>
         <!-- card -->
-        <section class="card">
+        <section class="card" data-price="50900">
           <div class="card__container">
             <div class="card__wrapper">
               <div class="card__left-block block-left">
@@ -201,7 +204,8 @@
                 <div class="block-right__data">
                   <div class="block-right__descr response">
                     <p class="response__text">
-                      Отклики <span>4</span><span id="response__count">+1</span>
+                      Отклики <span>4</span
+                      ><span id="response__count-color1">+1</span>
                     </p>
                   </div>
                   <div class="block-right__descr view">
@@ -258,7 +262,7 @@
           </div>
         </section>
         <!-- card -->
-        <section class="card">
+        <section class="card" data-price="5000">
           <div class="card__container">
             <div class="card__wrapper">
               <div class="card__left-block block-left">
@@ -383,7 +387,7 @@
           </div>
         </section>
         <!-- card -->
-        <section class="card">
+        <section class="card" data-price="5000">
           <div class="card__container">
             <div class="card__wrapper">
               <div class="card__left-block block-left">
@@ -509,7 +513,7 @@
           </div>
         </section>
         <!-- card -->
-        <section class="card">
+        <section class="card" data-price="50900">
           <div class="card__container">
             <div class="card__wrapper">
               <div class="card__left-block block-left">
@@ -643,6 +647,7 @@
       <footer class="footer"></footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/sort.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/dropdown-dots.js"></script>
     <script src="./js/app.js"></script>
