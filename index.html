@@ -42,8 +42,9 @@
               <label class="section__block-data">
                 <input
                   type="checkbox"
-                  id="checkbox"
+                  id="checkbox-all"
                   class="section__real-checkbox"
+                  onchange="checkAll(this)"
                 />
                 <span class="section__custom-checkbox"></span>
                 <span class="section__text-checkbox"> Снять спубликации </span>
@@ -56,25 +57,16 @@
                 <div class="dropdown-items__content dropdown">
                   <button class="dropdown-items__btn">Все объявления</button>
                   <ul class="dropdown-items__list">
-                    <li
-                      class="dropdown-items__item arr-top"
-                      data-value="travel"
-                    >
+                    <li class="dropdown-items__item arr-top">
                       Все объявления 1
                     </li>
-                    <li
-                      class="dropdown-items__item arr-down"
-                      data-value="travel"
-                    >
+                    <li class="dropdown-items__item arr-down">
                       Все объявления 2
                     </li>
-                    <li class="dropdown-items__item arr-top" data-value="photo">
+                    <li class="dropdown-items__item arr-top">
                       Все объявления 3
                     </li>
-                    <li
-                      class="dropdown-items__item arr-down"
-                      data-value="lessons"
-                    >
+                    <li class="dropdown-items__item arr-down">
                       Все объявления 4
                     </li>
                   </ul>
@@ -130,8 +122,9 @@
                       <label class="public__block-data">
                         <input
                           type="checkbox"
-                          id="public"
+                          id="public-1"
                           class="public__real-checkbox"
+                          name="checkbox-item"
                         />
                         <span class="public__custom-checkbox"></span>
                       </label>
@@ -263,8 +256,9 @@
                       <label class="public__block-data">
                         <input
                           type="checkbox"
-                          id="public"
+                          id="public-2"
                           class="public__real-checkbox"
+                          name="checkbox-item"
                         />
                         <span class="public__custom-checkbox"></span>
                       </label>
@@ -390,8 +384,9 @@
                       <label class="public__block-data">
                         <input
                           type="checkbox"
-                          id="public"
+                          id="public-3"
                           class="public__real-checkbox"
+                          name="checkbox-item"
                         />
                         <span class="public__custom-checkbox"></span>
                       </label>
@@ -513,13 +508,14 @@
               <div class="card__wrapper">
                 <div class="card__left-block block-left">
                   <!-- ----checkbox public ---- -->
-                  <div class="block-left__pictures public">
+                  <div class="block-left__pictures">
                     <div class="public__check">
                       <label class="public__block-data">
                         <input
                           type="checkbox"
-                          id="public"
+                          id="public-4"
                           class="public__real-checkbox"
+                          name="checkbox-item"
                         />
                         <span class="public__custom-checkbox"></span>
                       </label>
@@ -651,6 +647,7 @@
       <footer class="footer"></footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/checkbox.js"></script>
     <script src="./js/sort.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/dropdown-dots.js"></script>

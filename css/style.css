@@ -823,6 +823,14 @@ html {
   color: #606483;
 }
 
+.invisible-content {
+  display: none;
+}
+
+.hidden-div {
+  display: none;
+}
+
 .dropdown-dots {
   position: relative;
 }
