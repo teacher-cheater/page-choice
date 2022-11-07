@@ -784,6 +784,45 @@ html {
   color: #606483;
 }
 
+.companies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.companies__icon {
+  width: 36px;
+  height: 36px;
+  background-color: #f3f6f8;
+  border-radius: 6px;
+  background: url("../img/icons/briefcase.svg") center center no-repeat, #f3f6f8;
+}
+.companies__title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #333153;
+  text-transform: uppercase;
+}
+.companies__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #606483;
+}
+
 .dropdown-dots {
   position: relative;
 }
