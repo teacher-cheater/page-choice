@@ -62,19 +62,6 @@
   }
 
   &__check {
-    position: absolute;
-    top: 11px;
-    left: 12px;
-    width: 16px;
-    height: 16px;
-    background: #ffffff;
-    border-radius: 2px;
-    vertical-align: sub;
-    margin-top: 5px;
-    background: #fafcfd;
-    border: 1px solid #d8deeb;
-    border-radius: 2px;
-    z-index: 3;
   }
 
   &__check img {
@@ -113,6 +100,82 @@
     transform: translateX(-50%);
     width: 15px;
     height: 15px;
+  }
+}
+//----------custom checkbox button public
+.public {
+  // .public__check
+
+  &__check {
+  }
+
+  // .public__block-data
+
+  &__block-data {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  // .public__real-checkbox
+
+  &__real-checkbox {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    top: 18px;
+    left: 14px;
+    z-index: -1;
+    display: flex;
+    align-self: start;
+  }
+
+  // .public__custom-checkbox
+
+  &__custom-checkbox {
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background: #ffffff;
+    border-radius: 2px;
+    vertical-align: sub;
+    margin-top: 5px;
+    background: #fafcfd;
+    border: 1px solid #d8deeb;
+    border-radius: 2px;
+
+    position: absolute;
+    top: 11px;
+    left: 12px;
+
+    //width: 16px;
+    //height: 16px;
+    //background: #ffffff;
+    //border-radius: 2px;
+    //vertical-align: sub;
+    //margin-top: 5px;
+    //background: #fafcfd;
+    //border: 1px solid #d8deeb;
+    //border-radius: 2px;
+    z-index: 2;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background: url("../img/other-icon/check.svg") 0 0 / contain no-repeat;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transition: all 0.2s ease-in 0;
+      transform: translate(-50%, -50%) scale(0);
+    }
+  }
+  &__real-checkbox:checked + &__custom-checkbox::before {
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 

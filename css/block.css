@@ -81,21 +81,6 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.block-left__check {
-  position: absolute;
-  top: 11px;
-  left: 12px;
-  width: 16px;
-  height: 16px;
-  background: #ffffff;
-  border-radius: 2px;
-  vertical-align: sub;
-  margin-top: 5px;
-  background: #fafcfd;
-  border: 1px solid #d8deeb;
-  border-radius: 2px;
-  z-index: 3;
-}
 .block-left__check img {
   border-radius: 6px;
 }
@@ -130,6 +115,67 @@
           transform: translateX(-50%);
   width: 15px;
   height: 15px;
+}
+
+.public__block-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.public__real-checkbox {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  top: 18px;
+  left: 14px;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: start;
+}
+.public__custom-checkbox {
+  display: inline-block;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border-radius: 2px;
+  vertical-align: sub;
+  margin-top: 5px;
+  background: #fafcfd;
+  border: 1px solid #d8deeb;
+  border-radius: 2px;
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  z-index: 2;
+}
+.public__custom-checkbox::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../img/other-icon/check.svg") 0 0/contain no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: all 0.2s ease-in 0;
+  -o-transition: all 0.2s ease-in 0;
+  transition: all 0.2s ease-in 0;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+      -ms-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+}
+.public__real-checkbox:checked + .public__custom-checkbox::before {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+      -ms-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
 }
 
 .block-right {
