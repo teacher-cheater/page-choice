@@ -4,7 +4,7 @@ document.querySelectorAll('.dropdown').forEach((dropDownWrapper) => {
   const dropDownBtn = dropDownWrapper.querySelector('.dropdown-items__btn');
   const dropDownList = dropDownWrapper.querySelector('.dropdown-items__list');
   const dropDownListItems = dropDownList.querySelectorAll('.dropdown-items__item');
-  const dropDownInput = dropDownWrapper.querySelector('.dropdown-items__input');
+  //const dropDownInput = dropDownWrapper.querySelector('.dropdown-items__input');
 
   // Клик по кнопке. Открыть/Закрыть select
   dropDownBtn.addEventListener('click', function (e) {
@@ -18,7 +18,6 @@ document.querySelectorAll('.dropdown').forEach((dropDownWrapper) => {
       e.stopPropagation();
       dropDownBtn.innerText = this.innerText;
       dropDownBtn.focus();
-      dropDownInput.value = this.dataset.value;
       dropDownList.classList.remove('dropdown-items__list--visible');
     });
   });

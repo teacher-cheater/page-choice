@@ -2,10 +2,9 @@
 document.querySelector('.arr-price-top').onclick = mysort;
 document.querySelector('.arr-price-down').onclick = mysortDesc;
 
+const nav = document.querySelector('.main-wrapper__card')
 
 function mysortDesc() {
-  const nav = document.querySelector('.main')
-
   for (let i = 0; i < nav.children.length; i++) {
     for (let k = i; k < nav.children.length; k++) {
       if (+nav.children[i].getAttribute('data-price') > +nav.children[k].getAttribute('data-price')) {
@@ -17,8 +16,6 @@ function mysortDesc() {
 }
 
 function mysort() {
-  const nav = document.querySelector('.main')
-
   for (let i = 0; i < nav.children.length; i++) {
     for (let k = i; k < nav.children.length; k++) {
       if (+nav.children[i].getAttribute('data-price') < +nav.children[k].getAttribute('data-price')) {
